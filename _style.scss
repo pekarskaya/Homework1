@@ -84,34 +84,12 @@
     cursor: pointer;
     transition: 0.2s;
   } 
-  .top-content__batton:hover{
+  @media (min-width:834px) {
+    .top-content__batton:hover{
     background-image: url(img/button-white.svg);
   }
+}
 
-  .top-content__btn {
-    position: absolute;
-    margin-top: 48px;
-    background:#202027;
-    border: 1px solid #202027;
-    box-sizing: border-box;
-    border-radius: 60px;
-    width: 247px;
-    height: 66px;
-    font-family: Montserrat;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 34.01px;
-    color: #FFFFFF;
-    text-align: center;
-    cursor: pointer;
-  }
-  .top-content__btn:hover {
-    transition: 1s;
-    border: 1px solid #202027;
-    background-color: #FFFFFF;
-    font-weight: 600;
-    color: #202027;
-  }
   .top-img{
     position: absolute;
     display: flex;
@@ -320,3 +298,4 @@
     padding-top: 61px;
     padding-bottom: 60px;
   }
+  @import 'style';
