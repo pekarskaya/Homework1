@@ -7,11 +7,6 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.center {
-  padding-left: calc(50% - 600px);
-  padding-right: calc(50% - 600px);
-}
-
 h1{
   font-family: inherit;
   font-size: 64px;
@@ -54,7 +49,6 @@ a {
 }
 .top {
   height: 800px;
-  width: 100%;
   background-image: url(img/StarBiggest.svg), url(img/BackgroundGreen.svg);
   background-repeat: no-repeat, no-repeat;
   background-size: contain, cover;
@@ -68,7 +62,6 @@ a {
 }
 
 .top-content {
-  padding-left: 119px;
  justify-content: left;
 }
 
@@ -79,8 +72,9 @@ a {
   font-family: inherit;
   margin-top: 196px;
   margin-bottom: 24px;
+  margin-left: 119px;
 }
-@media(min-width:834px){
+@media(min-width:833px){
 .top-content__text, .top-content__text1{
   display: flex;
   flex-wrap: wrap;
@@ -89,6 +83,7 @@ a {
   font-weight: 400;
   line-height: 32px;
   text-align: left;
+  margin-left: 119px;
   }
   .top-content__text2{
     display: none;
@@ -120,6 +115,7 @@ a {
   padding-top: 16px;
   padding-bottom: 16px;
   margin-top: 48px;
+  margin-left: 119px;
 } 
 .top-content__batton:hover{
   border-radius: 60px;
@@ -223,18 +219,12 @@ a {
 }
 .main {
   box-sizing: border-box;
-
-   background-image: url(img/Star\ 1.svg);
+   background-image: url(img/Star-1.svg);
    background-repeat: no-repeat;
    background-position: top 50px right;
- background-color: #202027;   
+  background-color: #202027;   
   padding-top: 94px;
   padding-bottom: 92px;
-}
-@media(min-width:834px){
-.main-1{
-  padding-left: 119px;
-}
 }
 .main-img{
   position: absolute;
@@ -262,17 +252,18 @@ a {
 }
 .main-img-1__Star-6{
   position: absolute;
-  top: -47px;
+  top: -187px;
   left: 1201px;
 }
 .main-img-1__Star-7{
   position: absolute;
   top: -93.79px;
-  left: 1158px;
+  left: 1008px;
 }
 .main__title{
   color: #FFFFFF;
   margin-bottom: 24px;
+  margin-left: 119px;
 }
 .title-mini-plays{
   color: #FFFFFF;
@@ -288,6 +279,7 @@ a {
   line-height: 32px;
   text-align: left;
   color: #FFFFFF;
+  margin-left: 119px;
 }
 .main__plays {
   display: grid;
@@ -295,6 +287,7 @@ a {
   grid-template-columns: repeat(12,1fr);
   width: 1201px;
   margin-top: 72px;
+  margin-left: 119px;
 }
 
 .main__plays_item{
@@ -352,6 +345,7 @@ a {
 .title-mini-plays{
   margin-top: 96px;
   margin-bottom: 72px;
+  margin-left: 119px;
 }
 .main__mini-plays {
   display: grid;
@@ -359,6 +353,7 @@ a {
   grid-template-columns: repeat(12,1fr);
   width: 1201px;
   margin-top: 48px;
+  margin-left: 119px;
 }
 .main__mini-plays_item{
   grid-column: span 12;
@@ -415,6 +410,7 @@ a {
   background-position: center;
   padding-top: 61px;
   padding-bottom: 60px;
+  min-width: 376px;
 }
 @media(max-width:2255px){
   .center{
@@ -445,11 +441,7 @@ padding-right: calc(50% - 754.5px);
   padding-left: calc(50% - 735px);
 padding-right: calc(50% - 735px);
 }
-.main-img__Star-1 {
-position: absolute;
-top: 0px;
-left: 800px;
-}
+
 .main-img-1__Star-6{
 position: absolute;
 top: -146px;
@@ -460,6 +452,11 @@ position: absolute;
 top: -93.79px;
 left: 958px;
 }
+}
+@media(max-width:1438px){
+  .title, .top-content__text, .top-content__text1, .top-content__batton, .main__title, .main__text, .main__plays, .title-mini-plays, .main__mini-plays{
+    margin-left: 48px;
+  }
 }
 
 @media(max-width:1319px){
@@ -498,6 +495,9 @@ left: 958px;
 .center{
   padding-left: calc(50% - 648.5px);
 padding-right: calc(50% - 648.5px);
+}
+.title, .top-content__text, .top-content__text1, .top-content__batton, .main__title, .main__text, .main__plays, .title-mini-plays, .main__mini-plays{
+  margin-left: 30px;
 }
 }
 @media(max-width:1229px){
@@ -573,14 +573,12 @@ flex-direction: column;
 justify-content: left;
 margin-top: 48px;
 margin-right: 13px;
-margin-left: 48px;
 }
 .main__mini-plays_item-content-2, .main__mini-plays_item-content-4, .main__mini-plays_item-content-6 {
 display: flex;
 flex-direction: column;
 justify-content: left;
 margin-top: 48px;
-margin-left: 48px;
 }
 .main__mini-plays_item-img{
 border-radius: 30px;
@@ -866,6 +864,7 @@ margin-bottom: 24px;
     background-repeat: no-repeat, no-repeat;
     background-size: 32%, cover;
     background-position: top right, center;
+    min-width: 376px;
   }
   .title{
     width: 296px;
@@ -967,12 +966,10 @@ margin-bottom: 24px;
 }
 .mob{
   box-sizing: border-box;
-  width: 100%;
   background-color: #202027;   
   padding-top: 48.88px;
   padding-bottom: 48.88px;
-  justify-content: left;
-  padding-left: 16px;
+  min-width: 376px;
 }
 .mob-title{
   display: flex;
@@ -980,6 +977,7 @@ margin-bottom: 24px;
   width: 275px;
   text-align: left;
   margin-bottom: 48px;
+  margin-left: 16px;
   color: #FFFFFF;
 }
 .mob__mini-plays {
@@ -999,6 +997,7 @@ margin-bottom: 24px;
     width: 343px;
     margin-bottom: 24px;
     padding-bottom: 24px;
+    margin-left: 16px;
   }
   .mob__mini-plays_item-content{
     display: flex;
